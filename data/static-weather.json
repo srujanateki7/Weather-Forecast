@@ -1,0 +1,37 @@
+{
+  "latitude": 17.5,
+  "longitude": 78.25,
+  "generationtime_ms": 0.8369684219360352,
+  "utc_offset_seconds": 19800,
+  "timezone": "Asia/Kolkata",
+  "timezone_abbreviation": "IST",
+  "elevation": 527.0,
+  "current_weather": {
+    "temperature": 31.7,
+    "windspeed": 12.3,
+    "winddirection": 195.0,
+    "weathercode": 2,
+    "is_day": 1,
+    "time": "2023-04-26T12:30"
+  },
+  "daily_units": {
+    "time": "iso8601",
+    "weathercode": "wmo code",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C"
+  },
+  "daily": {
+    "time": [
+      "2023-04-26",
+      "2023-04-27",
+      "2023-04-28",
+      "2023-04-29",
+      "2023-04-30",
+      "2023-05-01",
+      "2023-05-02"
+    ],
+    "weathercode": [95, 96, 80, 96, 3, 3, 3],
+    "temperature_2m_max": [32.3, 32.1, 32.5, 32.3, 32.6, 34.8, 32.8],
+    "temperature_2m_min": [22.8, 21.7, 23.8, 23.9, 23.9, 24.1, 24.5]
+  }
+}

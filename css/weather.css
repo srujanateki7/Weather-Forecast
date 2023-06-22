@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: black;
+    background-image: linear-gradient(rgba(92, 91, 91, 0.5), rgba(30, 30, 30, 0.5)),url("../img/thunderstorm-night.jpg");  
+    background-repeat:no-repeat;
+    background-size: cover;   
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    color:white;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+.heading-searchbar-container{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 30px;
+}
+.search ,#myInput{
+    background-color: rgb(255, 255, 255);
+    color:grey;
+    font-weight: bold;
+    border:none;
+    padding:3px 2px;
+    display:flex;
+    width: 200px;  
+    border-radius: 20px;
+}
+#citySearch{
+    cursor:pointer;
+    
+}
+.error{
+    color:white;
+    font-size: 14px;
+    margin-top:5px;
+    margin-left:5px;
+    display:none;
+    
+}
+main {
+   
+    margin: auto;
+    padding: 16px;
+    width: 90%;
+ 
+}
+.weather-condition{
+    font-size:20px
+}
+.weather-today
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border:1px solid white;
+    border-radius: 15px;
+    box-shadow: 1px 4px rgb(244, 244, 244);
+    margin: auto;
+    width: 20%;
+    color:white;
+    gap:12px;
+    margin-top: 40px;
+  
+}
+
+.weather-condition-icon {
+    width: 80px;
+}
+
+.weather-today .weather-condition-icon {
+    width: 150px;
+    
+}
+
+.weather-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 1px 4px rgb(244, 244, 244);
+}
+
+.weather-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+    margin-top:50px;
+    /* overflow-x: scroll; */
+}
+
+.weather-week :hover ,.weather-week:active{
+    font-size: 20px;
+}
+
+
+

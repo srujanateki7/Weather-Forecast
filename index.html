@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather.css" />
+</head>
+<header>
+    <div class="heading-searchbar-container">
+        <h1>Weather Forecast</h1>
+        <form action="">
+            <div class="search">
+                <input id="myInput" type="text" name="mycity" placeholder="EnterCityname">
+                <img id="citySearch" src="./icon/searchIcon.png" alt="searchIcon"/>
+            </div>
+            <div class="error">
+                <span>Invalid City Name</span>
+            </div>
+        </form>   
+    </div> 
+</header>
+
+<body>
+    <main>
+       <!-- Background Change  -->
+        <!-- <div class="back-frame">
+            <div class="back-change"><img src="./img/thunderstorm-night.jpg" alt="Thunderstorm"></div>
+            <div class="back-change"><img src="./img/slight-rain.jpg" alt="slight-rain"></div>
+            <div class="back-change"><img src="./img/cloudy_weather.jpg" alt="cloudy_weather"></div>
+        </div> -->
+
+        <!-- Daily Weather -->
+        <div class="weather-today">
+             <h2 class="city">Hyderabad</h2>
+            <h2>Today</h2>
+            <img class="weather-condition-icon" src="./img/storm.png" alt="Thunderstorm" />
+            <span class="temp-min">Min: 18.7&#xb0;C</span> <!--Hex value for degree -->
+            <span class="temp-max">Max: 22.5&#xb0;C</span>  <!--Hex value for degree-->
+            <span class="weather-condition">Thunderstorm</span>
+        </div>
+        <!-- Weekly Weather  -->
+        <ul class="weather-week">
+            <!-- <li>Loading...</li> -->
+         </ul>
+    </main>
+    <script src="js/weather.js"></script> 
+</body>
+
+</html>
